@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<button class="btn">нажми</button>
+<script type="text/javascript">
+	let number = 0;
+	let names = ["Alena", "Nika", "Slava"];
+	let btn = document.querySelector(".btn");
+
+	let random = Math.round(Math.random()*3);
+	btn.onclick = function(){
+		number = number + 1;
+		for(let i=0; i<3; i=i+1){
+		alert(names[random]);	
+		}
+	}
+
+</script>
+</body>
+</html>
